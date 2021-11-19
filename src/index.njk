@@ -7,5 +7,14 @@ layout: base.njk
     <h1>This is my page</h1>
     <div class="vibe">you are great !</div>
     <div class="love">lot of love</div>
+
+{% for article in news.articles %}
+<ul>
+    <li>{{ article.title }}</li>
+</ul>
+{% endfor %}
+
 </div>
+
+
 <script src="/js/vibe.js"></script>
