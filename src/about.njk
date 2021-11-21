@@ -1,13 +1,17 @@
 ---
-title: A page for you
+title: About this page for you
 layout: base.njk
 ---
 
 <div class="container">
-    <h1>This is your page</h1>
-    <p>made with HTML, CSS and javascript. Served as a jamstack site.</p>
+  <h1>This page is really for you!</h1>
+  <p>It was made for you using HTML, CSS and JavaScript. And served as a JAMStack site.</p>
 </div>
 
+
 {% for item in news %}
-    <a href="/{{ item.country }}">{{ item.country }}</a>
-{% endfor%}
+  <a href="/{{ item.country}}">{{ item.country }}</a>
+{%  endfor %}
+
+
+
